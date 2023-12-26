@@ -1,0 +1,57 @@
+
+.nav-center{
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 90vw;
+max-width: 1170px;
+padding: 1rem;
+
+}
+h1{
+    margin: 0;
+}
+
+.social-icon,.link{
+    height: 0;
+    overflow: hidden;
+
+}
+.link,.social-icon{
+   
+   list-style: none;
+}
+.linkinfo,.icon{
+    margin-right: 10px; /* 或者您想要的間距值 */
+}
+.nav-toggle {
+    transition: all 0.5s linear;
+}
+.nav-toggle:hover {
+    transform: rotate(90deg);
+  }
+.show-links{
+    height: 10rem;
+} 
+
+@media screen and (min-width:800px){
+    nav {
+        display: flex;
+        justify-content: space-between
+     
+     }
+    .nav-center{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        width: auto;
+    }
+    .nav-toggle{
+        display: none;
+    }
+    .social-icon,.link{
+        height: auto;
+        display: flex;  
+    }
+}
