@@ -25,8 +25,8 @@
     height: 50px
 }
 .link-container{
-    
     height: 0px;
+    
     transition:height 0.5s linear;
     overflow: hidden;
 }
@@ -57,8 +57,14 @@ label{
     cursor: pointer;
 }
 .link-container.show-link{
-    height: 30vh;
+    
    
+}
+section{
+    height: 90vh;
+    display: grid;
+    place-items: center;
+
 }
 
 @media screen and (min-width: 800px) {
@@ -80,7 +86,7 @@ label{
     }
     .link-container{
         width: 40vh;
-        height: 50px;
+        height: auto !important;
         display: block;
     }
     .links{
