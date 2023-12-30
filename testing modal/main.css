@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 150vh;
+    aspect-ratio: 3/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main{
+    width: 80vh;
+    aspect-ratio: 16/9;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.pop{
+    width: 100vh;
+    aspect-ratio: 16/9;
+    position: absolute;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    visibility:hidden;
+    z-index: -10;
+background-color: rgb(250, 235, 215);
+    
+}
+.pop.show{
+    visibility: visible;
+    z-index: 10;
+}
+.btn2{
+    position: absolute;
+  background-color: transparent;
+    border: none;
+   right: 100px;
+}
