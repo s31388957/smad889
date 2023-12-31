@@ -1,0 +1,43 @@
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title-header{
+    display: grid;
+    place-items: center;
+    
+}
+.title-container{
+    display: flex;
+}
+.title-content{
+    padding: 1rem 2rem;
+    background-color: hsl(0, 0%, 50%);
+    list-style-type: none;
+}
+[class="title-content"]:hover{
+    background-color: hwb(180 0% 22%);
+    color: aqua;
+    cursor: pointer;
+}
+.active{
+background-color: white;
+display: block;
+}
+.text-header{
+
+}
+.text-container{
+    display: grid;
+    place-items: center;
+}
+[class="text-container"] { 
+    
+    display: none;
+  }
+
+.text-content{
+    width:clamp(45ch,50%,75ch);
+   
+      }
