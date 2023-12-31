@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .main-container{
     min-height: 100vh;
    
@@ -13,7 +15,14 @@
     background-color: white;
     
 }
-
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    
+  }
 .nav-center{
     display: flex;
     justify-content: space-between;
@@ -60,17 +69,49 @@ label{
     
    
 }
+
 section{
     height: 90vh;
-    display: grid;
-    place-items: center;
+    padding-bottom: 5rem;
 
 }
+.title h2 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .title span {
+    
+  }
+.top-link {
+    font-size: 1.25rem;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    animation: bounce 2s ease-in-out infinite;
+    visibility: hidden;
+    z-index: -100;
+  }
+  .show-link {
+    visibility: visible;
+    z-index: 100;
+  }
 
 @media screen and (min-width: 800px) {
     #nav{
         background-color: transparent;
     }
+    .fixed-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: white !important  ;
+        
+      }
     .nav-center{
         width: 50px;
         
